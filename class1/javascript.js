@@ -1,7 +1,8 @@
 // const x = 5 
-// // console.log(x)
-// document.write(x)
-// //  let x = 6
+// console.log(x)
+// document.write('hello world')
+//  let x = 6
+//  x = 7
 // console.log(x)
 // let name ;
 // name = 'maham'
@@ -11,10 +12,12 @@
 // console.log(_myVar)
 
 // var y = 5;
+// var y ='hello'
+// console.log(y)
 // let age = 25;
 // const URL = "https://example.com"
 
-// global Scope
+// ------------global Scope------------
 // var global = 'Global Scope'
 // function myFunction (){
 //     console.log(global)
@@ -22,7 +25,7 @@
 // console.log(global)
 // myFunction()
 
-// local Scope
+// ------------------local Scope----------------
 // function myFunction (){
 // let value = 2
 //    console.log(value)
@@ -52,12 +55,13 @@
 // console.log(a)
 // const a = 20 Cannot redeclare block-scoped variable 'a'.
 
-// Operators 
+// ---------------Operators --------------------------
 // Arithmetic Operators
 // let x = 5;
 // let y = 2;
-// // Addition
+// //  Addition
 // let sum = x + y; // Result: 7
+// console.log(sum)
 // // Subtraction
 // let difference = x - y; // Result: 3
 // document.write(sum)
@@ -77,7 +81,7 @@
 // // Decrement
 // let decrement = --y; // Result: 1
 
-// Comparison Operators:
+// -----------------Comparison Operators:------------------
 // let x = 5;
 // let y = 10;
 
@@ -99,7 +103,7 @@
 // // Less than or equal to
 // console.log(x <= y); // Result: true
 
-// Logical Operators
+// ------------------Logical Operators--------------------
 // let x = 5;
 // let y = 10;
 
@@ -114,32 +118,9 @@
 // ternary Operator 
 // let age = 25;
 
-// // Ternary operator
-// let message = age >= 18 ? "Adult" : "Minor";
-// console.log(message); // Result: "Adult"
 
-// let x = 5; // Binary: 0101
-// let y = 3; // Binary: 0011
 
-// // Bitwise AND
-// let resultAND = x & y; // Result: 1 (Binary: 0001)
-
-// // Bitwise OR
-// let resultOR = x | y; // Result: 7 (Binary: 0111)
-
-// // Bitwise XOR
-// let resultXOR = x ^ y; // Result: 6 (Binary: 0110)
-
-// // Bitwise left shift
-// let resultLeftShift = x << 1; // Result: 10 (Binary: 1010)
-
-// // Bitwise right shift
-// let resultRightShift = x >> 1; // Result: 2 (Binary: 0010)
-// let number = 10;
-// let binary = number.toString(2);
-// console.log(binary); // Output: "1010"
-
-// Assignment Operator 
+//-------------------- Assignment Operator -------------------
 // let x = 5;
 
 // // Simple assignment
@@ -168,32 +149,9 @@
 // document.write(linebreak);
 
 
-// typeof
-// let x = 10;
-// console.log(typeof x); // Output: "number"
 
-// let y = "Hello";
-// console.log(typeof y); // Output: "string"
 
-// let z = true;
-// console.log(typeof z); // Output: "boolean"
-
-// let arr = [1, 2, 3];
-// console.log(typeof arr); // Output: "object"
-
-// let obj = { name: "John", age: 25 };
-// console.log(typeof obj); // Output: "object"
-
-// let func = function() { };
-// console.log(typeof func); // Output: "function"
-
-// let n = null;
-// console.log(typeof n); // Output: "object"
-
-// let u = undefined;
-// console.log(typeof u); // Output: "undefined"
-
-// Condition if else
+// ----------------Condition if else----------------
 // let age = 18;
 
 // if (age >= 18) {
@@ -212,21 +170,15 @@
 // }else{
 //  document.write("<b>Unknown Book</b>");
 // }
-// while loop
+// ---------------while loop------------------
 // let count = 0;
 
 // while (count < 5) {
 //   console.log("Count: " + count);
 //   count++;
 // }
-// do while loop 
-// let i = 0;
 
-// do {
-//   console.log("Current value of i: " + i);
-//   i++;
-// } while (i < 5);
-// for loop
+// --------------for loop------------
 // for (let i = 0; i < 5; i++) {
 //     console.log("Value of i: " + i);
 //   }

@@ -1,29 +1,32 @@
 // ------------DOM-----------
-// document.body.style.background = 'red'; // make the background red
-// setTimeout(() => document.body.style.background = '', 3000); // return back
+document.body.style.background = 'red'; // make the background red
+setTimeout(() => document.body.style.background = '', 1000); // return back
+let element = document.getElementById('myElement')
+// element.style.color = 'green'
 // document.getElementsByTagName('p'
 // ---------Example Code----------
 // // Accessing window object properties
-// console.log(window.innerWidth); // Accessing window width
-// console.log(window.document.title); // Accessing document title
+console.log(window.innerWidth); // Accessing window width
+console.log(window.document.title); // Accessing document title
+alert('hello')
 // console.log(location.href); // Accessing current URL
 
-// // Modifying window object properties
+// // --------------Modifying window object properties--------------
 // window.document.title = "My Website";
 // console.log(window.document.title)
 
 // -----------METHOD-----------
 // let myElement = document.getElementById("myElement");
 // console.log(myElement); // Output: Element object with the specified ID or null
-// Accessing innerText
+// ----------Accessing innerText-----------------
 // let myElement = document.getElementById("myElement");
 // let textContent = myElement.innerText;
 // console.log(textContent); // Output: Text content of the element
 
-// // Modifying innerText
+// // --------------Modifying innerText---------------
 // myElement.innerText = "Updated text content";
 
-// Changing element style
+// ------------Changing element style-----------------
 // let myElement = document.getElementById("myElement");
 // myElement.style.color = "yellow";
 // myElement.style.fontSize = "20px";
@@ -33,12 +36,19 @@
 // tag_name.style.color = "pink"
 // console.log(tag_name.style.color = "pink")
 
- // Select elements by class name
+ // -------------Select elements by class name---------------
 //  let elements = document.getElementsByClassName("highlight");
 
-// //  // Accessing elements in the collection
+// //  //------------- Accessing elements in the collection--------------
+// let first_value = elements[1]
+// first_value.innerText = 'new value '
+// first_value.style.background = 'purple'
+// let  last_name = elements[2]
+// last_name.style.width = '30px'
+// last_name.style.color = 'green'
 //  for (let i = 0; i < 2 ; i++) {
-//    let element = elements[i];
+//   //  let element = elements[i];
+  
 //    element.innerText = "Updated Text";
 //    element.style.color = "blue";
 //  }
@@ -51,10 +61,16 @@
 //     console.log(element.textContent);
 //   }
   
-// query selector 
+// -----------query selector ------------
 // Selecting a single element by ID
-// let elementById = document.querySelector("#myElement");
-
+// let elementById = document.querySelectorAll("p");
+// console.log(elementById)
+// for (let i = 0; i < elementById.length; i++) {
+//       let element = elementById[i];
+//       // Do something with each element
+//       console.log(element.textContent);
+//     }
+// elementById.innerText = 'hello'
 // // Selecting a single element by class name
 // let elementByClass = document.querySelector(".highlight");
 // for (let i = 0; i < elementByClass.length; i++) {
@@ -80,25 +96,25 @@
 
 // console method 
 // console.log('hello')
-// console.warn('hello')
-// console.info('hello')
+// console.warn('Warning')
+// console.info('info')
 // console.error('error')
-console.clear()
+// console.clear()
 
-function myFunction(){
-    var a , b
-    a = 10 
-    b = 20 
-    return a + b
+// function myFunction(){
+//     var a , b
+//     a = 10 
+//     b = 20 
+//     return a + b
 
-}console.log(myFunction())
+// }console.log(myFunction())
 
 // myFunction()
 // window object 
-// Accessing the window object
+//----------- Accessing the window object---------------
 // console.log(window);
 
-// // Accessing properties and methods of the window object
+// //-------- Accessing properties and methods of the window object--------
 // console.log(window.innerWidth); // Outputs the inner width of the browser window
 // console.log(window.innerHeight); // Outputs the inner height of the browser window
 
@@ -168,24 +184,33 @@ function myFunction(){
 //  result = concatenate('Zara', 'Ali');
 //  document.write (result );
 // }
-// nested function
-function outerFunction() {
-    let outerVariable = "I'm from the outer .";
+// // nested function
+// function outerFunction() {
+//     let outerVariable = "I'm from the outer .";
   
-    function innerFunction() {
-      let innerVariable = "I'm from the inner function.";
-      console.log(outerVariable);
-      console.log(innerVariable);
-    }
+//     function innerFunction() {
+//       let innerVariable = "I'm from the inner function.";
+//       console.log(outerVariable);
+//       console.log(innerVariable);
+//     }
   
-    innerFunction();
-  }
+//     innerFunction();
+//   }
   
-  outerFunction();
+//   outerFunction();
 
-  function SumFunction(a,b){
-    return a + b
+//   function SumFunction(a,b){
+//     return a + b
+//   }
+//   console.log(SumFunction(4,3))
+//   console.log(SumFunction(6,4))
+var functionName = 'fatima'
+console.log(functionName)
+function myFunction (){
+  console.log('outer function ')
+  function newFunction (){
+    console.log('inner Function')
   }
-  console.log(SumFunction(4,3))
-  console.log(SumFunction(6,4))
-
+  // newFunction()
+}
+// myFunction()

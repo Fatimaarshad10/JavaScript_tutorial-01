@@ -15,24 +15,26 @@ function performOperation() {
   var operation = document.getElementById('operation').value;
   var result;
 
-  if (operation === 'add') {
+  switch (operation) {
+    case 'Add' : 
     result = num1 + num2;
-  } else if (operation === 'sub') {
+    break;
+    case 'sub' : 
     result = num1 - num2;
-  } else if (operation === 'multi') {
+    break;
+    case 'multi': 
     result = num1 * num2;
-  } else if (operation === 'mod') {
+    break;
+    case 'mod': 
     result = num1 % num2;
-  } else {
+    break;
+    default: 
     result = "Invalid operation";
-  }
-
+  }   
   document.getElementById('sum').value = result;
   return false;
 }
 
-
 window.onload = function() {
   document.getElementById('MyForm').onsubmit = performOperation;
 };
-

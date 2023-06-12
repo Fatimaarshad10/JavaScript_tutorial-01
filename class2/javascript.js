@@ -1,14 +1,14 @@
 // ------------DOM-----------
-document.body.style.background = 'red'; // make the background red
-setTimeout(() => document.body.style.background = '', 1000); // return back
-let element = document.getElementById('myElement')
-// element.style.color = 'green'
-// document.getElementsByTagName('p'
-// ---------Example Code----------
-// // Accessing window object properties
-console.log(window.innerWidth); // Accessing window width
-console.log(window.document.title); // Accessing document title
-alert('hello')
+// document.body.style.background = 'red'; // make the background red
+// setTimeout(() => document.body.style.background = '', 1000); // return back
+// let element = document.getElementById('myElement')
+// // element.style.color = 'green'
+// // document.getElementsByTagName('p'
+// // ---------Example Code----------
+// // // Accessing window object properties
+// console.log(window.innerWidth); // Accessing window width
+// console.log(window.document.title); // Accessing document title
+// alert('hello')
 // console.log(location.href); // Accessing current URL
 
 // // --------------Modifying window object properties--------------
@@ -37,8 +37,13 @@ alert('hello')
 // console.log(tag_name.style.color = "pink")
 
  // -------------Select elements by class name---------------
-//  let elements = document.getElementsByClassName("highlight");
-
+ let elements = document.querySelectorAll('p');
+//  elements.innerHTML = 'update value '
+ for (let i = 0; i < elements.length ; i++) {
+  let element = elements[i];
+  element.innerText = "Updated Text";
+  element.style.color = "blue";
+}
 // //  //------------- Accessing elements in the collection--------------
 // let first_value = elements[1]
 // first_value.innerText = 'new value '
@@ -46,12 +51,7 @@ alert('hello')
 // let  last_name = elements[2]
 // last_name.style.width = '30px'
 // last_name.style.color = 'green'
-//  for (let i = 0; i < 2 ; i++) {
-//   //  let element = elements[i];
-  
-//    element.innerText = "Updated Text";
-//    element.style.color = "blue";
-//  }
+
 
 // let elements = document.getElementsByTagName("p");
 // let firstElement = elements[0];

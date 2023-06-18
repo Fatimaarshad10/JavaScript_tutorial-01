@@ -41,6 +41,37 @@
 // let remainder = x % y;
 // console.log("Remainder:", remainder);
 
+// Example
+// var a = 12
+// var b = 30
+
+// var and_operator = (a == b) && ( a >= b)
+// console.log(and_operator) 
+
+// var or_operator = (a != b) || ( a >= b)
+// console.log(or_operator) 
+
+// a = a + b
+// a = a +a 
+//  a += a
+//  console.log(a)
+//  a -=b
+//  console.log(a)
+//  a *= b 
+//  console.log(a)
+//  a /= b 
+//  console.log(a)
+//  a %= b
+//  console.log(a)
+
+
+
+
+
+
+
+
+
 // // Addition assignment (+=)
 // let a = 5;
 // a += 3; 

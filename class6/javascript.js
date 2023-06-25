@@ -94,17 +94,3 @@
     
 // }
 // myFunction()
-
-
-// ---------------Problem no 1----------------
-// function changeBackgroundColor() {
-//     let element = document.getElementById('myElement');
-//     element.style.backgroundColor = 'blue';
-//   }
-
-
-// ------------------Problem no 2-----------
-// var element = document.getElementById("myElement");
-
-// // Change the innerHTML of the element
-// element.innerHTML = "Yes";

@@ -1,3 +1,12 @@
+
+// variable and function example 
+// var name1 = 'ayesha'
+// function getFullName (){
+//     return console.log(name1)
+// }
+// getFullName()
+
+
 //  Object Literal:
 // const student = {
 //   name: 'ayesha',
@@ -7,22 +16,23 @@
 //     return this.name;
 //   }
 // };
-// // //   // Accessing object properties
+// Accessing object properties
 // console.log(student.name);  
 // console.log(student.age);   
 // console.log(student.major); 
+// add property in object
 // student.email = "ayesha@example.com";
-// console.log(student.email)
+// delete property in object 
 // delete student.email;
-
-// console.log(student.email)
-// // // // Invoking an object method
+// console.log(student)
+// Invoking an object method
 // console.log(student.getFullName());  
 
 
 // Define a function which will work as a method
 // function addPrice(amount){
 //     this.price = amount; 
+//     // console.log(this.price)
 //    }
 //    function book(title, author){
 //     this.title = title; 
@@ -33,13 +43,12 @@
 //    myBook.addPrice(100);
 //    document.write("Book title is : " + myBook.title + "<br>");
 //    document.write("Book author is : " + myBook.author + "<br>");
-//    document.write("Book price is : " + myBook.price + "<br>")
+//    document.write("Book price is : " + myBook.addPrice + "<br>")
+
 
 // with keyword
-// function addPrice(amount){
-//     with(this){
-//     price = amount; 
-//     }
+// function addPrice(amount){   
+//     this.price = amount;   
 //    }
 //    function book(title, author){
 //     this.title = title; 
@@ -48,10 +57,9 @@
 //     this.addPrice = addPrice; // Assign that method as property.
 //    }
 //    var myBook = new book("harry potter", "J.K Rowling");
-//  myBook.addPrice(100);
-//  document.write("Book title is : " + myBook.title + "<br>");
-//  document.write("Book author is : " + myBook.author + "<br>");
+//    myBook.addPrice(200);
 //  document.write("Book price is : " + myBook.price + "<br>");
+
 
 
 // window object 
@@ -71,100 +79,3 @@
 // document.getElementById("demo").innerHTML ="Page protocol is " + window.location.protocol;
 // document.getElementById("demo").innerHTML ="Port number is " + window.location.port;
 
-// function newDoc() {
-//     window.location.assign("https://classroom.google.com/w/NjEyMDIyMjQwODI1/t/all")
-//   }
-
-
-// DIALOG BOX
-// function Warn() {
-//     alert ("This is a warning message!");
-//     document.write ("This is a warning message!");
-//    }
-   
-// function getValue(){
-//     var retVal = prompt("Enter your name : ", "your name here");
-    
-//     document.write("You have entered : " + retVal);
-//    }
-   
-// function getConfirmation(){
-//     var retVal = confirm("Do you want to continue ?");
-//     if( retVal == true ){
-//     document.write ("User wants to continue!");
-//     return true;
-//     }else{
-//     document.write ("User does not want to continue!");
-//     return false;
-//     }
-//    }
-
-
-
-
-
-// Constructor function for person objects
-// function person (name , age , dob) {
-//   this.name = name;
-//   this.age = age;
-//   this.dob = dob;
-// }
-
-// // Array of car objects
-// var first_person = new person("Eman", 25 , '12-05-2000');
-// var second_person = new person("alisha", 30, '04-02-2001');
-// var third_person = new person("amna", 18 , '10-07-2003');
-
-
-// // Function to generate table rows from Person objects
-// function generateTableRows() {
-//   const tableBody = document.querySelector("#personTable tbody");
-
-//   const row1 = `
-//     <tr>
-//       <td>${first_person.name}</td>
-//       <td>${first_person.age}</td>
-//       <td>${first_person.dob}</td>
-//     </tr>
-//   `;
-
-//   const row2 = `
-//     <tr>
-//       <td>${second_person.name}</td>
-//       <td>${second_person.age}</td>
-//       <td>${second_person.dob}</td>
-//     </tr>
-//   `;
-
-//   const row3 = `
-//     <tr>
-//       <td>${third_person.name}</td>
-//       <td>${third_person.age}</td>
-//       <td>${third_person.dob}</td>
-//     </tr>
-//   `;
-
-//   tableBody.innerHTML = row1 + row2 + row3;
-// }
-
-// // Invoke the function to generate table rows
-// generateTableRows();
-
-
-
-
-// Example 
-
-// const person = {
-//   name: "nimra",
-//   age: 30,
-//   gender: "female",
-//   greet: function() {
-//     console.log(`Hello, my name is ${this.name}. I'm ${this.age} years old.`);
-//   }
-// };
-
-// console.log(person.name); 
-// console.log(person.age); 
-
-// person.greet();

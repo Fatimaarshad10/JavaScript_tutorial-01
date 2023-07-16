@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 5px;
+    }     
+      .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(20, 18, 18, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+      }
+      .overlay:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .popup {
+        margin: 70px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 30%;
+        position: relative;
+        transition: all 5s ease-in-out;
+      }
+      
+      .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+      }
+      .popup .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
+      .popup .close:hover {
+        color: #c68a46;
+      }
+      .popup .content {
+        max-height: 30%;
+        overflow: auto;
+      }
+      
+      @media screen and (max-width: 700px){
+        .box{
+          width: 70%;
+        }
+        .popup{
+          width: 70%;
+        }
+      }
+  </style>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <a class="button" href="#popup2">Login</a>
+          <a class="button" href="#popup1">Sign up</a>
+        </ul>
+    </nav>
+   
+    <div id="popup1" class="overlay">
+      <div class="popup">
+          <h2>Sign up </h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <br/>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <br/>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <div id="popup2" class="overlay">
+      <div class="popup">
+          <h2>Login</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            <form>
+              <label for="login-email">Email:</label>
+              <input type="email" id="login-email" name="login-email" required>
+              <br/>
+          
+              <br/>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript code to show the popup when clicking on the "Login" or "Sign up" buttons
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var loginButton = document.querySelector('.button[href="#popup2"]');
+        var signUpButton = document.querySelector('.button[href="#popup1"]');
+        var loginPopup = document.getElementById('popup2');
+        var signUpPopup = document.getElementById('popup1');
+        var closeButtons = document.querySelectorAll('.close');
+
+        loginButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          loginPopup.style.visibility = 'visible';
+          loginPopup.style.opacity = '1';
+          signUpPopup.style.visibility = 'hidden';
+          signUpPopup.style.opacity = '0';
+        });
+
+        signUpButton.addEventListener('click', function(event) {
+          event.preventDefault();
+          signUpPopup.style.visibility = 'visible';
+          signUpPopup.style.opacity = '1';
+          loginPopup.style.visibility = 'hidden';
+          loginPopup.style.opacity = '0';
+        });
+
+        closeButtons.forEach(function(closeButton) {
+          closeButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            loginPopup.style.visibility = 'hidden';
+            loginPopup.style.opacity = '0';
+            signUpPopup.style.visibility = 'hidden';
+            signUpPopup.style.opacity = '0';
+          });
+        });
+      });
+    </script>
+</body>
+</html>

@@ -16,7 +16,11 @@
 //  document.write("Book langauge is : " + myBook.language + "<br>");
 
 
-// var student = new Object()
+var student = new Object()
+
+student.name = 'fatima'
+console.log(student)
+
 // student.name = 'noor'
 // var student2 = new Object()
 

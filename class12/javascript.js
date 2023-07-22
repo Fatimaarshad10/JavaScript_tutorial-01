@@ -1,9 +1,31 @@
+// function Country(name) {
+//     this.name = name;
+// }
+
+// // Adding a property to the prototype using 'prototype' keyword
+// Country.prototype.language = 'urdu';
+
+// const country_one = new Country('pakistan');
+// const country_two = new Country('india');
+
+// // Adding an instance-specific property directly to 'country_one'
+// country_one.religious = 'no';
+
+// console.log(country_one.language ); 
+// console.log(country_two.language ); 
+
+// console.log(country_one.religious); 
+// console.log(country_two.religious); 
+
+
 // Number Object in js 
 
 // const num1 = new Number(42);
+// console.log(num1)
 // const num2 = 123; 
 // console.log(typeof num1)
 // console.log(typeof num2)
+
 // // properties 
 // console.log(Number.MAX_VALUE); 
 // console.log(Number.MIN_VALUE);
@@ -27,6 +49,69 @@
 
 // const numObject = new Number(42);
 // console.log(numObject.valueOf()); 
+
+
+// const booleanObj = new Boolean(true);
+// console.log(booleanObj); 
+// console.log(booleanObj.valueOf())
+// console.log(booleanObj.toString()); 
+// console.log(booleanObj.constructor === Boolean); 
+
+
+// const stringObj = new String("Hello, world!");
+// console.log(stringObj)
+
+
+// const primitiveString = "Hellod, world!";
+// console.log(primitiveString.lengthd); 
+// console.log(primitiveString.charAt(6)); 
+// console.log(primitiveString.charCodeAt(2)); 
+// console.log(primitiveString.concat('nono')); 
+// console.log(primitiveString.indexOf("d")); 
+// console.log(primitiveString.lastIndexOf('d')); 
+// console.log(primitiveString.match('Hello')); 
+// console.log(primitiveString.replace('Hello', 'No')); 
+// console.log(primitiveString.search('Hello')); 
+// console.log(primitiveString.slice(1,4))
+// console.log(primitiveString.split(" ", 2))
+
+// var str = "Apples are round, and apples are juicy.";
+// if (str.toLowerCase().search('apples') == -1) {
+//   document.write("Does not contain Apples");
+// } else {
+//   document.write("Contains Apples");
+// }
+
+// var sliced = str.slice(3, -2)
+// document.write( sliced );
+
+
+// var str1 = new String( "This is string one and again string" );
+// var index = str1.lastIndexOf( "to" );
+// document.write("lastIndexOf found String :" + index ); 
+// document.write("<br />");
+// var index = str1.lastIndexOf( "one" );
+// document.write("lastIndexOf found String :" + index );
+
+
+
+
+
+// console.log(primitiveString.toUpperCase()); 
+// console.log(primitiveString.constructor); 
+
+// Using a String object unnecessarily
+// const stringObj = new String("Hello");
+// console.log(stringObj)
+// const resultObj = stringObj + " World";
+// console.log(resultObj); 
+
+
+// // Using primitive string directly
+// const primitiveString = "Hello";
+// const resultPrimitive = primitiveString + " World";
+// console.log(resultPrimitive); // Output: "Hello World"
+
 
 
 // Constructor function for person objects
@@ -74,9 +159,6 @@
 
 // // // Invoke the function to generate table rows
 // generateTableRows();
-
-
-
 
 // Example 
 

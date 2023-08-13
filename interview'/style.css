@@ -1,0 +1,103 @@
+/* .container {
+    position: relative;
+    background-color: rgb(180, 193, 193);
+    width: 200px;
+    height: 50vh;
+  }
+  .absolute-box , .absolute-box-2  , .absolute-box-3 , .absolute-box-4{
+    position: absolute;
+    width: 100px;
+    height: 20vh;
+   
+    background-color: rgb(153, 110, 57);
+  }
+  .absolute-box-2{
+    background-color: rgb(46, 194, 73);
+    display: inline-block;
+
+  }
+  .absolute-box-3{
+    background-color: rgb(89, 107, 188);
+    display: inline-block;
+
+
+  }
+  .absolute-box-4{
+    background-color: rgb(225, 213, 42);
+
+    position: relative;
+
+  }
+  .quote::before {
+ background-color: bisque;
+  }
+  .colored-paragraph::before {
+    content: "Before: "; 
+    color: blue; 
+  }
+  
+  .colored-paragraph::after {
+    content: " After"; 
+    color: red; 
+  } */
+
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(22, 13, 3);
+  }
+  
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+  }
+  
+  .row:nth-child(even) .box:nth-child(odd),
+  .row:nth-child(odd) .box:nth-child(even) {
+    background-color:rgb(127,92,69);
+  }
+  
+  /* Set the 1st, 3rd, 4th, and 6th boxes to white */
+  /* .box:nth-child(1),
+  .box:nth-child(2),
+  .box:nth-child(3),
+  .box:nth-child(4),
+  .box:nth-child(5),
+  .box:nth-child(6),
+  .box:nth-child(7),
+  .box:nth-child(8) 
+
+  {
+    background-color:rgb(237,235,220);
+    
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  } */
+  /* .container {
+    background-color: blanchedalmond;
+    width: 600px;
+    height: 50vh;
+    max-width: 500px;
+
+  }
+  .main {
+    background-color: rgb(112, 202, 139);
+    width: 500px;
+    height: 20vh;
+
+  } */
+  .container {
+    background-color: rgb(76, 62, 42);
+    width: 700px;
+    height: 50vh;
+    max-width: 500px;
+  }
+  

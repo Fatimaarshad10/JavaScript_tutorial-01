@@ -16,17 +16,18 @@
 //     return this.name;
 //   }
 // };
-// Accessing object properties
+// // Accessing object properties
 // console.log(student.name);  
 // console.log(student.age);   
 // console.log(student.major); 
-// add property in object
+// // add property in object
 // student.email = "ayesha@example.com";
 // delete property in object 
 // delete student.email;
 // console.log(student)
-// Invoking an object method
+// // Invoking an object method
 // console.log(student.getFullName());  
+
 
 
 // Define a function which will work as a method

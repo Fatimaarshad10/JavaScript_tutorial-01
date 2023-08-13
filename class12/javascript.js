@@ -1,116 +1,113 @@
 // function Country(name) {
 //     this.name = name;
 // }
-
-// // Adding a property to the prototype using 'prototype' keyword
 // Country.prototype.language = 'urdu';
 
 // const country_one = new Country('pakistan');
+// console.log(country_one.name)
+// country_one.city = 'faisalabad'
+// console.log(country_one.language)
+
 // const country_two = new Country('india');
+// console.log(country_two)
+
 
 // // Adding an instance-specific property directly to 'country_one'
 // country_one.religious = 'no';
 
-// console.log(country_one.language ); 
-// console.log(country_two.language ); 
+// console.log(country_one.language);
+// console.log(country_two.language);
 
-// console.log(country_one.religious); 
-// console.log(country_two.religious); 
+// console.log(country_one.religious);
+// console.log(country_two.religious);
 
 
-// Number Object in js 
+    // var first = prompt("Enter your name : ", "your name here");
+    // console.log(first)
+    // document.write("You have entered : " + first);
+//     function new_value(){
+//         var first = confirm("Do you want to continue ?");
+//         if( first == true ){
+//         document.write ("User wants to continue!");
+//         return true;
+//         }else{
+//         document.write ("User does not want to continue!");
+//         return false;
+//         }
+//     }
+//    new_value()
+// alert('hello')
+// const  Human = {
+//     name : 'tusia',
+//     hijab: 'purple',
+//     goan : 'black',
 
-// const num1 = new Number(42);
-// console.log(num1)
-// const num2 = 123; 
+// }
+// console.log(Human)
+// console.log(Human.name)
+// Human.shoes = 'black'
+// console.log(Human)
+// delete Human.name
+// console.log(Human)
+
+// const school = new Object ({
+//     title : 'hello',
+// })
+// console.log(school.constructor)
+// function Human (hijab , goan , shoes , name){
+//     this.name = name
+//     this.hijab= hijab
+//     this.goan = goan
+//     this.shoes = shoes
+// }
+// console.log(Human)
+// const first_person = new Human('red', 'black', 'white', 'tusia')
+// console.log(first_person.name)
+// const second_person = new Human('red', 'black', 'white', 'hifsa')
+// console.log(second_person)
+// // Number Object in js
+// const data  = new Number(23)
+// console.log(data.valueOf())
+
+// // properties
+
+// console.log(Number.MAX_VALUE);
+// console.log(Number.MIN_VALUE);
+// console.log(Number.NaN);
+// console.log(Number.POSITIVE_INFINITY);
+// console.log(Number.NEGATIVE_INFINITY);
+
+// const num1 = new Number(1234567.89);
+
+
+// console.log(num1.toExponential())
+// console.log(num1.toFixed());
+// console.log(num1.toLocaleString());
+// console.log(num1.toString(5));
+// console.log(num1.valueOf())
+// console.log(num1.toPrecision(4));
+
+// console.log(num1.toFixed(2));
+
+// const num2 = 123;
+// console.log(num2)
 // console.log(typeof num1)
 // console.log(typeof num2)
 
-// // properties 
-// console.log(Number.MAX_VALUE); 
-// console.log(Number.MIN_VALUE);
-// console.log(Number.NaN); 
-// console.log(Number.POSITIVE_INFINITY); 
-// console.log(Number.NEGATIVE_INFINITY); 
-// methods 
+// methods
 // const largeNumber = 1234567890;
 // const smallNumber = 0.00001234;
 
-// console.log(largeNumber.toExponential()); 
-// console.log(smallNumber.toExponential(2)); 
+// console.log(largeNumber.toExponential());
+// console.log(smallNumber.toExponential(2));
 
 // const number = 1234567.89;
-// console.log(number.toLocaleString()); 
 // const pi = 3.14159265359;
-// console.log(pi.toFixed(4)); 
-// console.log(pi.toPrecision(4));
-// console.log(pi.valueOf())
-// console.log(pi.toString(2)); 
 
 // const numObject = new Number(42);
-// console.log(numObject.valueOf()); 
+// console.log(numObject.valueOf());
 
 
-// const booleanObj = new Boolean(true);
-// console.log(booleanObj); 
-// console.log(booleanObj.valueOf())
-// console.log(booleanObj.toString()); 
-// console.log(booleanObj.constructor === Boolean); 
-
-
-// const stringObj = new String("Hello, world!");
-// console.log(stringObj)
-
-
-// const primitiveString = "Hellod, world!";
-// console.log(primitiveString.lengthd); 
-// console.log(primitiveString.charAt(6)); 
-// console.log(primitiveString.charCodeAt(2)); 
-// console.log(primitiveString.concat('nono')); 
-// console.log(primitiveString.indexOf("d")); 
-// console.log(primitiveString.lastIndexOf('d')); 
-// console.log(primitiveString.match('Hello')); 
-// console.log(primitiveString.replace('Hello', 'No')); 
-// console.log(primitiveString.search('Hello')); 
-// console.log(primitiveString.slice(1,4))
-// console.log(primitiveString.split(" ", 2))
-
-// var str = "Apples are round, and apples are juicy.";
-// if (str.toLowerCase().search('apples') == -1) {
-//   document.write("Does not contain Apples");
-// } else {
-//   document.write("Contains Apples");
-// }
-
-// var sliced = str.slice(3, -2)
-// document.write( sliced );
-
-
-// var str1 = new String( "This is string one and again string" );
-// var index = str1.lastIndexOf( "to" );
-// document.write("lastIndexOf found String :" + index ); 
-// document.write("<br />");
-// var index = str1.lastIndexOf( "one" );
-// document.write("lastIndexOf found String :" + index );
-
-
-
-
-
-// console.log(primitiveString.toUpperCase()); 
-// console.log(primitiveString.constructor); 
-
-// Using a String object unnecessarily
-// const stringObj = new String("Hello");
-// console.log(stringObj)
-// const resultObj = stringObj + " World";
-// console.log(resultObj); 
-
-
-// // Using primitive string directly
-// const primitiveString = "Hello";
-// const resultPrimitive = primitiveString + " World";
-// console.log(resultPrimitive); // Output: "Hello World"
 
 
 
@@ -160,20 +157,6 @@
 // // // Invoke the function to generate table rows
 // generateTableRows();
 
-// Example 
 
-// const person = {
-//   name: "nimra",
-//   age: 30,
-//   gender: "female",
-//   greet: function() {
-//     console.log(`Hello, my name is ${this.name}. I'm ${this.age} years old.`);
-//   }
-// };
-
-// console.log(person.name); 
-// console.log(person.age); 
-
-// person.greet();
 
 

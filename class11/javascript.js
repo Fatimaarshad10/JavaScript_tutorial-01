@@ -1,18 +1,18 @@
 
 // =============Object literal / simple Object=========== 
 // ===========Without new operator and Object constructor=========
-// const  School= {
-//     title : 'hello',
-// }
-// console.log(School)
-// // add property
-// School.city = 'faisalabad' 
-// console.log(School)
-// delete property 
-// delete School.title 
-// console.log(School)
-// // check is this object is belong to which constructor 
-// console.log(School.constructor)
+const  School= {
+    title : 'hello',
+}
+console.log(School)
+// add property
+School.city = 'faisalabad' 
+console.log(School)
+delete property 
+delete School.title 
+console.log(School)
+// check is this object is belong to which constructor 
+console.log(School.constructor)
 
 
 // ==============With new operator and Object constructor===========

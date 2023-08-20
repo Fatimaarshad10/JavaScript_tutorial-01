@@ -184,31 +184,31 @@ console.log(Date.prototype)
 
 
 
-// // // Creating an object to be stored as JSON
+// Creating an object to be stored as JSON
 const userData = {
-    name: "John Doe",
-    age: 30,
-    email: "john@example.com"
+    email: "tosia@gmail.com",
+    password : 123
 };
 
-// // // Convert the object to JSON format
+// Convert the object to JSON format
 const jsonData = JSON.stringify(userData);
 
-// // // Store the JSON data in Local Storage with the key "user"
+// // // // Store the JSON data in Local Storage with the key "user"
 localStorage.setItem("user", jsonData);
 
 
-// // // Retrieve the JSON data from Local Storage
+// // // // Retrieve the JSON data from Local Storage
 const storedData = localStorage.getItem("user");
 console.log(storedData)
 
-if (storedData) {
-//     Parse the JSON data back to a JavaScript object
+// if (storedData) {
+// //     Parse the JSON data back to a JavaScript object
     const parsedData = JSON.parse(storedData);
 console.log(parsedData)
-    // console.log(parsedData.name); // Output: "John Doe"
-    // console.log(parsedData.age);  // Output: 30
-    // console.log(parsedData.email); // Output: "john@example.com"
-} else {
-    console.log("No user data found.");
-}
+document.write(parsedData.email)
+//     // console.log(parsedData.name); // Output: "John Doe"
+//     // console.log(parsedData.age);  // Output: 30
+//     // console.log(parsedData.email); // Output: "john@example.com"
+// } else {
+//     console.log("No user data found.");
+// }

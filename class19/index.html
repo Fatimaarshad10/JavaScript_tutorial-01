@@ -4,7 +4,7 @@
     <title>Form Example</title>
 </head>
 <body>
-    <form id="myForm">
+<!-- <form id="myForm">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
         
@@ -12,7 +12,7 @@
         <input type="email" id="email" name="email"><br><br>
         
         <input type="submit" value="Submit">
-    </form>
+    </form> 
 
     <script>
         // JavaScript code to set and get the name and email values from localStorage
@@ -20,6 +20,8 @@
             const form = document.getElementById("myForm");
             const nameInput = document.getElementById("name");
             const emailInput = document.getElementById("email");
+             const storedName = localStorage.getItem("name");
+            const storedEmail = localStorage.getItem("email"); 
 
  if(storedName){
     console.log(storedName)
@@ -55,7 +57,8 @@
             changeBackgroundColor(); // Call the function to change the background color
         }, 2000);
         
-    </script>
+    </script>   --> 
+    <script src="./javascript.js"></script>
 </body>
 </html>
 

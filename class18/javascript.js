@@ -52,38 +52,8 @@
 // console.log("Doing other things...");
 
 
-// function doSomethingAsync(callback) {
-//  console.log(callback())
-
-// }
-
-// function callbackFunction() {
-//     let a , b;
-//     a = 10
-//     b = 20
-//    console.log( a + b)
-//     // console.log("Callback executed!");
-// }
-
-// doSomethingAsync(callbackFunction);
 
 
 
 
 
-// function greet(name) {
-//     console.log(`Hello, ${name}!`);
-//   }
-  
-//   setTimeout(function() {
-//     greet("Alice");
-//   }, 2000);
-  
-//   const greet = (name) => {
-//     console.log(`Hello, ${name}!`);
-//   };
-  
-//   setTimeout(() => {
-//     greet("Bob");
-//   }, 1500); 
-  

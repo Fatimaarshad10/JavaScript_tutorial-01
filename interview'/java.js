@@ -1,35 +1,35 @@
 
 
 
-//   // Get all the boxes (flex-items) that contain the pawn image
-//   const pawnBoxes = document.querySelectorAll('.box img[src="./pawn.png"]');
+  // Get all the boxes (flex-items) that contain the pawn image
+  const pawnBoxes = document.querySelectorAll('.box img[src="./pawn.png"]');
 
-//   // Add click event listeners to each pawn box
-//   pawnBoxes.forEach(pawnBox => {
-//     pawnBox.addEventListener('click', movePawn);
-//   });
+  // Add click event listeners to each pawn box
+  pawnBoxes.forEach(pawnBox => {
+    pawnBox.addEventListener('click', movePawn);
+  });
 
-//   // Function to move the pawn to the next box
-//   function movePawn(event) {
-//     const currentPawnBox = event.currentTarget.parentNode;
-//     const currentRow = currentPawnBox.parentNode;
-//     const currentRowIndex = Array.from(currentRow.parentNode.children).indexOf(currentRow);
-//     const currentBoxIndex = Array.from(currentRow.children).indexOf(currentPawnBox);
+  // Function to move the pawn to the next box
+  function movePawn(event) {
+    const currentPawnBox = event.currentTarget.parentNode;
+    const currentRow = currentPawnBox.parentNode;
+    const currentRowIndex = Array.from(currentRow.parentNode.children).indexOf(currentRow);
+    const currentBoxIndex = Array.from(currentRow.children).indexOf(currentPawnBox);
 
-//     // Calculate the next box index based on the current row and box index
-//     const nextRowIndex = currentRowIndex + 1;
-//     const nextBoxIndex = currentBoxIndex + 1;
+    // Calculate the next box index based on the current row and box index
+    const nextRowIndex = currentRowIndex + 1;
+    const nextBoxIndex = currentBoxIndex + 1;
 
-//     // Check if the next row and box exist (within the chessboard)
-//     const nextRow = currentRow.parentNode.children[nextRowIndex];
-//     if (nextRow) {
-//       const nextBox = nextRow.children[nextBoxIndex];
-//       if (nextBox) {
-//         // Move the pawn by swapping its parent box with the next box
-//         nextBox.appendChild(event.currentTarget);
-//       }
-//     }
-//   }
+    // Check if the next row and box exist (within the chessboard)
+    const nextRow = currentRow.parentNode.children[nextRowIndex];
+    if (nextRow) {
+      const nextBox = nextRow.children[nextBoxIndex];
+      if (nextBox) {
+        // Move the pawn by swapping its parent box with the next box
+        nextBox.appendChild(event.currentTarget);
+      }
+    }
+  }
 
 // let num1 = 5;
 // let num2 = "5";
@@ -76,23 +76,23 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
   
-    $("#loadDataBtn").click(function() {
-      $.ajax({
-        url: "https://fakestoreapi.com/products",
-        type: "GET",
-        dataType: "json",
-        success: function(data) {
-  console.log(data)
-          $("#dataContainer").html("Data from server: " + JSON.stringify(data));
-        },
-        error: function(xhr, status, error) {
-          console.error("Error fetching data: " + error);
-        }
-      });
-    });
-  });
+//     $("#loadDataBtn").click(function() {
+//       $.ajax({
+//         url: "https://fakestoreapi.com/products",
+//         type: "GET",
+//         dataType: "json",
+//         success: function(data) {
+//   console.log(data)
+//           $("#dataContainer").html("Data from server: " + JSON.stringify(data));
+//         },
+//         error: function(xhr, status, error) {
+//           console.error("Error fetching data: " + error);
+//         }
+//       });
+//     });
+//   });
 
 
 //   function Person (name , age){
